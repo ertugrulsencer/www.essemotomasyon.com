@@ -1,0 +1,49 @@
+<header class="header">
+	<div class="container">
+		<a href="<%= url('/') %>" class="logo">
+			<img src="/public/images/essem-logo.png" alt="double-logo" />
+		</a>
+		<nav class="navigation">
+			<ul class="menu">
+				<li>
+					<a href="<%= url('/') %>" class="<%= active_url('/') %>">Ana Sayfa</a>
+				</li>
+				<li>
+					<a href="<%= url('#services') %>">Hizmetlerimiz</a>
+				</li>
+				<li>
+					<a href="<%= url('products') %>" class="<%= active_url('/products') %>">Ürünler</a>
+				</li>
+				<li>
+					<a href="<%= url('referances') %>" class="<%= active_url('/referances') %>">
+						Referanslar
+					</a>
+				</li>
+				<li>
+					<a href="<%= url('about') %>" class="<%= active_url('about') %>">Hakkımızda</a>
+				</li>
+				<li>
+					<a href="<%= url('contact-us') %>" class="<%= active_url('contact-us') %>">Bize Ulaşın</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="select-lang">
+			<a href="<%= url(null, lang) %>" class="current-lang">
+				<img src="/public/images/langs/<%= lang %>.svg" alt="<%= lang %>-flag" />
+			</a>
+			<ul>
+				<% for(lang_item of langs){ %>
+				<!---->
+				<% if(lang_item != lang){ %>
+				<li>
+					<a href="<%= url(null, lang_item) %>">
+						<img src="/public/images/langs/<%= lang_item %>.svg" alt="<%= lang_item %>-flag" />
+					</a>
+				</li>
+				<% } %>
+				<!---->
+				<% } %>
+			</ul>
+		</div>
+	</div>
+</header>

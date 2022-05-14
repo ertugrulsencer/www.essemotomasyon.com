@@ -1,0 +1,99 @@
+main#productsPage {
+	background-color: rgb(var(--light-color));
+	section.search-product {
+		.search-box {
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 2rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			width: 35%;
+			input {
+				width: 100%;
+				border: 2px solid rgba(var(--primary-color), 0.75);
+				padding: 0.75rem 1.25rem;
+				border-radius: 100px;
+				font-size: 0.95rem;
+				color: rgba(var(--dark-color), 0.75);
+				font-weight: 600;
+			}
+			button {
+				background: rgba(var(--primary-color), 0.75);
+				color: rgb(var(--light-color));
+				border-radius: 50%;
+				width: 28px;
+				height: 28px;
+				outline: none;
+				border: 0;
+				position: absolute;
+				right: 0.75rem;
+			}
+		}
+	}
+	section.products {
+		.product-list {
+			padding: 2.5rem 0;
+			display: flex;
+			align-items: stretch;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			.product-item {
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				justify-content: space-between;
+				flex-basis: calc(25% - 1.5rem);
+				max-width: calc(25% - 1.5rem);
+				height: 230px;
+				background-color: #fff;
+				border-radius: 0.25rem;
+				box-shadow: 2px 4px 18px -4px rgba(var(--dark-color), 0.15);
+				.img {
+					width: 100%;
+					height: calc(100% - 60px);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin: auto;
+					overflow: hidden;
+					img {
+						width: 85%;
+						height: 85%;
+						object-fit: contain;
+						transition: transform 300ms ease-in-out;
+					}
+				}
+				header.product-header {
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-evenly;
+					flex-direction: column;
+					margin-top: auto;
+					height: 60px;
+					padding: 0.25rem 1.25rem;
+					background: rgba(var(--light-color), 0.25);
+					border-top: 1px solid rgba(var(--dark-color), 0.1);
+					font-weight: 600;
+					font-size: 0.95rem;
+					strong {
+						width: 100%;
+						max-width: 100%;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+					.price {
+						font-size: 0.85rem;
+						color: rgba(var(--dark-color), 0.75);
+					}
+				}
+				&:hover img {
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+}

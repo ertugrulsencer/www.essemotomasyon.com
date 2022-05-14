@@ -1,0 +1,17 @@
+main#aboutPage {
+	section.about {
+		padding: 1rem 0;
+		h3 {
+			color: rgb(var(--primary-color));
+			font-size: 1.35rem;
+			margin: 2rem 0 1rem;
+		}
+		p {
+			color: rgba(var(--dark-color), 0.75);
+			line-height: 150%;
+			font-size: 0.9rem;
+			font-weight: 500;
+			margin-bottom: 0.5rem;
+		}
+	}
+}

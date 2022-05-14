@@ -1,0 +1,28 @@
+{
+	"name": "doublecorporatetheme",
+	"version": "0.0.1",
+	"description": "Double Corporate Theme for Fribe LTD",
+	"main": "server.js",
+	"repository": "https://github.com/ertugrulsencer/double-corporate-theme.git",
+	"author": "Ertuğrul Sencer UZUN, Ömer Faruk BİÇER",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"start": "pm2 start server.js --name double-corporate-theme",
+		"serve": "nodemon server.js",
+		"sass": "sass --watch public/scss/main.scss:public/css/style.css"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15",
+		"sass": "^1.49.0"
+	},
+	"dependencies": {
+		"dotenv": "^14.2.0",
+		"ejs": "^3.1.6",
+		"express": "^4.17.2",
+		"express-fileupload": "^1.2.1",
+		"express-session": "^1.17.2",
+		"helmet": "^5.0.1",
+		"mongoose": "^6.1.7"
+	}
+}

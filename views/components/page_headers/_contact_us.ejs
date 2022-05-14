@@ -1,0 +1,56 @@
+<header class="page-header" style="background-image: url(/public/images/page_bgs/contact.jpeg)">
+	<div class="container">
+		<strong>Bize Ulaşın</strong>
+	</div>
+</header>
+<section class="contact-informations">
+	<div class="container">
+		<ul class="informations">
+			<li class="information">
+				<i class="icon fas fa-map-marker-alt"></i>
+				Fribe mah. İpekyolu Kervanı Cad. D:22 Şişli / İSTANBUL
+			</li>
+			<li class="information">
+				<i class="icon fas fa-envelope"></i>
+				<a href="mailto:info@doubletheme.com">info@doubletheme.com</a>
+			</li>
+			<li class="information">
+				<i class="icon fas fa-phone"></i>
+				<a href="tel:+90 555 555 8888">+90 555 555 8888</a>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="map-and-form">
+	<div class="container">
+		<div class="map col">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24060.69251447041!2d28.983691915315273!3d41.078029024784676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6ec703a9377%3A0x313fd99b1af90491!2sPlaza%20Cubes%20%7C%20Ka%C4%9F%C4%B1thane%20Papirus%20Plaza%20%7C%20Haz%C4%B1r%20%26%20Sanal%20%26%20Kiral%C4%B1k%20Ofis!5e0!3m2!1str!2sus!4v1644270965130!5m2!1str!2sus"
+				loading="lazy"
+			></iframe>
+		</div>
+		<div class="form col">
+			<form action="/contact" method="post">
+				<div class="flex">
+					<fieldset>
+						<input type="text" name="full_name" placeholder="Ad Soyad" />
+					</fieldset>
+					<fieldset>
+						<input type="email" name="email" placeholder="E Posta" />
+					</fieldset>
+				</div>
+				<fieldset>
+					<input type="text" name="subject" placeholder="Konu" />
+				</fieldset>
+				<fieldset>
+					<textarea name="message" rows="5" placeholder="Mesajınız"></textarea>
+				</fieldset>
+				<button type="submit">
+					<i class="fas fa-paper-plane"></i>
+					Gönder
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
