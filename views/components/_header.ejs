@@ -1,49 +1,74 @@
 <header class="header">
-	<div class="container">
-		<a href="<%= url('/') %>" class="logo">
-			<img src="/public/images/essem-logo.png" alt="double-logo" />
-		</a>
-		<nav class="navigation">
-			<ul class="menu">
-				<li>
-					<a href="<%= url('/') %>" class="<%= active_url('/') %>">Ana Sayfa</a>
-				</li>
-				<li>
-					<a href="<%= url('#services') %>">Hizmetlerimiz</a>
-				</li>
-				<li>
-					<a href="<%= url('products') %>" class="<%= active_url('/products') %>">Ürünler</a>
-				</li>
-				<li>
-					<a href="<%= url('referances') %>" class="<%= active_url('/referances') %>">
-						Referanslar
-					</a>
-				</li>
-				<li>
-					<a href="<%= url('about') %>" class="<%= active_url('about') %>">Hakkımızda</a>
-				</li>
-				<li>
-					<a href="<%= url('contact-us') %>" class="<%= active_url('contact-us') %>">Bize Ulaşın</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="select-lang">
-			<a href="<%= url(null, lang) %>" class="current-lang">
-				<img src="/public/images/langs/<%= lang %>.svg" alt="<%= lang %>-flag" />
-			</a>
-			<ul>
-				<% for(lang_item of langs){ %>
-				<!---->
-				<% if(lang_item != lang){ %>
-				<li>
-					<a href="<%= url(null, lang_item) %>">
-						<img src="/public/images/langs/<%= lang_item %>.svg" alt="<%= lang_item %>-flag" />
-					</a>
-				</li>
-				<% } %>
-				<!---->
-				<% } %>
-			</ul>
-		</div>
-	</div>
+  <div class="container">
+    <a href="<%= url('/') %>" class="logo">
+      <img src="/public/images/essem-logo.png" alt="double-logo" />
+    </a>
+    <nav class="navigation">
+      <ul class="menu">
+        <li>
+          <a href="<%= url('/') %>" class="<%= active_url('/') %>">
+            <%= get_lang()["header"]["home"][lang] %>
+          </a>
+        </li>
+        <li>
+          <a href="<%= url('#services') %>">
+            <%= get_lang()["header"]["services"][lang] %>
+          </a>
+        </li>
+        <li>
+          <a
+            href="<%= url('products') %>"
+            class="<%= active_url('/products') %>"
+          >
+            <%= get_lang()["header"]["products"][lang] %>
+          </a>
+        </li>
+        <li>
+          <a
+            href="<%= url('software-docs') %>"
+            class="<%= active_url('/software-docs') %>"
+          >
+            <%= get_lang()["header"]["software_and_documents"][lang] %>
+          </a>
+        </li>
+        <li>
+          <a href="<%= url('about') %>" class="<%= active_url('about') %>">
+            <%= get_lang()["header"]["about"][lang] %>
+          </a>
+        </li>
+        <li>
+          <a
+            href="<%= url('contact-us') %>"
+            class="<%= active_url('contact-us') %>"
+          >
+            <%= get_lang()["header"]["contact"][lang] %>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="select-lang">
+      <a href="<%= url(null, lang) %>" class="current-lang">
+        <img
+          src="/public/images/langs/<%= lang %>.svg"
+          alt="<%= lang %>-flag"
+        />
+      </a>
+      <ul>
+        <% for(lang_item of langs){ %>
+        <!---->
+        <% if(lang_item != lang){ %>
+        <li>
+          <a href="<%= url(null, lang_item) %>">
+            <img
+              src="/public/images/langs/<%= lang_item %>.svg"
+              alt="<%= lang_item %>-flag"
+            />
+          </a>
+        </li>
+        <% } %>
+        <!---->
+        <% } %>
+      </ul>
+    </div>
+  </div>
 </header>

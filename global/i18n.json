@@ -1,0 +1,83 @@
+{
+  "header": {
+    "home": {
+      "tr": "Ana Sayfa",
+      "en": "Home",
+      "ru": "мaмa"
+    },
+    "services": {
+      "tr": "Hizmetlerimiz",
+      "en": "Services",
+      "ru": "Наши сервисы"
+    },
+    "products": {
+      "tr": "Ürünler",
+      "en": "Produts",
+      "ru": "товары"
+    },
+    "software_and_documents": {
+      "tr": "Yazılım & Dökümanlar",
+      "en": "Software & Documents",
+      "ru": "продукты и документы"
+    },
+    "about": {
+      "tr": "Hakkımızda",
+      "en": "About Us",
+      "ru": "о нас"
+    },
+    "contact": {
+      "tr": "Bize Ulaşın",
+      "en": "Contact Us",
+      "ru": "Связаться с нами"
+    }
+  },
+  "contact_form": {
+    "txt_full_name": {
+      "tr": "Ad Soyad",
+      "en": "Full Name",
+      "ru": "Имя Фамилия"
+    },
+    "txt_email": {
+      "tr": "E Posta",
+      "en": "E Mail",
+      "ru": "Эл. адрес"
+    },
+    "txt_subject": {
+      "tr": "Konu",
+      "en": "Subject",
+      "ru": "Тема"
+    },
+    "txt_message": {
+      "tr": "Mesajınız",
+      "en": "Message",
+      "ru": "Сообщение"
+    },
+    "btn_submit": {
+      "tr": "Gönder",
+      "en": "Submit",
+      "ru": "Отправлять"
+    }
+  },
+  "footer": {
+    "about": {
+      "tr": "Hakkımızda",
+      "en": "About Us",
+      "ru": "о нас"
+    },
+    "site_map": {
+      "tr": "Site Haritası",
+      "en": "Site Map",
+      "ru": "Карта сайта"
+    },
+    "contact": {
+      "tr": "İletişim",
+      "en": "Contact",
+      "ru": "Коммуникация"
+    },
+    "copy_right": {
+      "tr": "Tüm hakları saklıdır.",
+      "en": "All rights reserved",
+      "ru": "Все права защищены"
+    }
+  }
+}

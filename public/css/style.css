@@ -176,10 +176,10 @@ footer.footer {
 footer.footer .container .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1.5rem;
+  margin: 0 -1rem;
 }
 footer.footer .container .row .col {
-  padding: 1.5rem;
+  padding: 1rem;
   flex: 1;
 }
 footer.footer .container .row .col header.footer-header {
@@ -207,12 +207,13 @@ footer.footer .container .row .col .site-map li {
 footer.footer .container .row .col .site-map li a {
   color: rgba(var(--light-color), 0.75);
   display: flex;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   align-items: center;
   justify-content: flex-start;
   padding: 0.25rem 0;
   margin-bottom: 0.25rem;
+  white-space: nowrap;
   transition: all 250ms ease-in-out;
 }
 footer.footer .container .row .col .site-map li a i {

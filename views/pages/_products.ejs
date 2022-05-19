@@ -1,108 +1,36 @@
 <!-- Page Header -->
 <%- include("../components/page_headers/_" + page) %>
 <section class="search-product">
-	<div class="container">
-		<form action="<%= url('products') %>" method="get" class="search-box">
-			<input type="text" name="s" placeholder="Ürün ara" />
-			<button type="submit" class="search-product">
-				<i class="fas fa-search"></i>
-			</button>
-		</form>
-	</div>
+  <div class="container">
+    <form action="<%= url('products') %>" method="get" class="search-box">
+      <input type="text" name="s" placeholder="Ürün ara" disabled />
+      <button type="submit" class="search-product" disabled>
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
 </section>
 <section class="products">
-	<div class="container">
-		<ul class="product-list">
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/iphone_11.jpeg" alt="iphone-11" />
-				</a>
-				<header class="product-header">
-					<strong>Apple Iphone 11</strong>
-					<span class="price">9.648₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/iphone_12.jpeg" alt="iphone-12" />
-				</a>
-				<header class="product-header">
-					<strong>Apple Iphone 12</strong>
-					<span class="price">12.072₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/iphone_13.jpeg" alt="iphone-13" />
-				</a>
-				<header class="product-header">
-					<strong>Apple Iphone 13</strong>
-					<span class="price">14.888₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/macbook_air.jpeg" alt="macbook-air" />
-				</a>
-				<header class="product-header">
-					<strong>Macbook Air M1</strong>
-					<span class="price">13.500₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/macbook_pro.jpeg" alt="macbook-pro" />
-				</a>
-				<header class="product-header">
-					<strong>Macbook Pro M1</strong>
-					<span class="price">15.000₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/imac.jpeg" alt="imac" />
-				</a>
-				<header class="product-header">
-					<strong>Apple iMac</strong>
-					<span class="price">18.617₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/airpods.jpeg" alt="airpods" />
-				</a>
-				<header class="product-header">
-					<strong>Airpods</strong>
-					<span class="price">2.599₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/airpods_pro.jpeg" alt="airpods-pro" />
-				</a>
-				<header class="product-header">
-					<strong>Airpods Pro</strong>
-					<span class="price">3.799₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/apple_watch_series_6.jpeg" alt="applewatch-series-6" />
-				</a>
-				<header class="product-header">
-					<strong>Apple Watch Series 6</strong>
-					<span class="price">4.997₺</span>
-				</header>
-			</li>
-			<li class="product-item">
-				<a href="#" class="img">
-					<img src="/public/images/products/apple_watch_series_7.jpeg" alt="applewatch-series-7" />
-				</a>
-				<header class="product-header">
-					<strong>Apple Watch Series 7</strong>
-					<span class="price">5.699₺</span>
-				</header>
-			</li>
-		</ul>
-	</div>
+  <div class="container">
+    <!-- <ul class="product-list">
+      <li class="product-item">
+        <a href="#" class="img">
+          <img src="/public/images/products/iphone_11.jpeg" alt="iphone-11" />
+        </a>
+        <header class="product-header">
+          <strong>Apple Iphone 11</strong>
+          <span class="price">9.648₺</span>
+        </header>
+      </li>
+    </ul> -->
+    <h3
+      style="
+        text-align: center;
+        margin: 1rem auto;
+        color: rgb(var(--color-primary));
+      "
+    >
+      Ürünlerimiz yakında eklenecektir..
+    </h3>
+  </div>
 </section>

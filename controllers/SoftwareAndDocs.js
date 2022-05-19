@@ -1,7 +1,7 @@
 const get = (req, res) => {
-	res.renderSiteView('referances');
+  res.renderSiteView("software_and_docs");
 };
 
 module.exports = {
-	get,
+  get,
 };
