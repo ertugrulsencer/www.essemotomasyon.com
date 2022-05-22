@@ -17,12 +17,6 @@ const SettingsSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    // Yapılacak
-    // languages: {
-    //   type: [mongoose.Schema.Types.ObjectId],
-    //   ref: 'Languages',
-    //   required: true,
-    // },
   },
   {
     versionKey: false,

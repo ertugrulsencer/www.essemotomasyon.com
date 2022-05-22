@@ -1,11 +1,27 @@
 const mongoose = require('mongoose');
 const AboutUsSchema = new mongoose.Schema(
     {
-      title: {
+      title_tr: {
         type: String,
         required: true,
       },
-      description: {
+      title_en: {
+        type: String,
+        required: true,
+      },
+      title_ru: {
+        type: String,
+        required: true,
+      },
+      description_tr: {
+        type: String,
+        required: true,
+      },
+      description_en: {
+        type: String,
+        required: true,
+      },
+      description_ru: {
         type: String,
         required: true,
       },
